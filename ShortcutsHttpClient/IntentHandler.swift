@@ -1,19 +1,14 @@
 import Intents
 
-class IntentHandler: INExtension {
+class IntentHandler: INExtension, MakeHTTPRequestIntentHandling {
   override func handler(for intent: INIntent) -> Any {
     return self
   }
   
-  func handle(intent: MakeHTTPRequestIntent) {
-
-    var url = if intent.useBaseUrl!.boolValue {
-      intent.baseUrl!.appending(path: intent.path!)
-    } else {
-      intent.url!
-    }
-
-    if let queryItemStrs = intent.queryParams {
+  func handle(intent: MakeHTTPRequestIntent) async -> MakeHTTPRequestIntentResponse {
+    var url = intent.url!;
+    
+    if let queryItemStrs = intent.query {
       let queryItems = queryItemStrs.map {
         let kv = $0.split(separator: "=", maxSplits: 1)
         return URLQueryItem(name: String(kv[0]), value: String(kv[1]))
@@ -23,30 +18,31 @@ class IntentHandler: INExtension {
 
     var request = URLRequest(url: url)
     request.httpMethod = String(describing: intent.method)
-    
-    switch intent.method {
-    case .post:
-      request.httpBody = intent.postBody!.data(using: .utf8)
-    case .put:
-      request.httpBody = intent.putBody!.data(using: .utf8)
-    case .patch:
-      request.httpBody = intent.patchBody!.data(using: .utf8)
-    default:
-      break;
-    }
-    
+    request.httpBody = intent.body!.data;
+
     if let headers = intent.headers {
       for header in headers {
         let kv = header.split(separator: /:\s*/, maxSplits: 1)
         request.addValue(String(kv[1]), forHTTPHeaderField: String(kv[0]))
       }
     }
-    
+
     if intent.useBasicAuth!.boolValue {
       let headerVal = "\(intent.username!):\(intent.password!)".data(using: .utf8)!.base64EncodedString()
       request.addValue("Basic \(headerVal)", forHTTPHeaderField: "Authorization")
     }
     
-    
+    do {
+      let (data, response) = try await URLSession.shared.data(for: request)
+      let httpResponse = response as! HTTPURLResponse
+      let intentResponse = MakeHTTPRequestIntentResponse(code: .success, userActivity: nil)
+      intentResponse.responseBody = String(data: data, encoding: .utf8)
+      intentResponse.responseCode = NSNumber(value: httpResponse.statusCode)
+      return intentResponse
+    } catch {
+      let intentResponse = MakeHTTPRequestIntentResponse(code: .failure, userActivity: nil)
+      intentResponse.responseBody = error.localizedDescription
+      return intentResponse
+    }
   }
 }

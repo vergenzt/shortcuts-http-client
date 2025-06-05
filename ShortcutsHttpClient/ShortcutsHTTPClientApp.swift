@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct shortcuts_http_clientApp: App {
+struct ShortcutsHttpClientApp: App {
   var body: some Scene {
     WindowGroup {
       ContentView()

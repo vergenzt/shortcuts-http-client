@@ -10,23 +10,9 @@
 		4159121C2B0808F3008D19F7 /* ShortcutsHTTPClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159121B2B0808F3008D19F7 /* ShortcutsHTTPClientApp.swift */; };
 		4159121E2B0808F3008D19F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159121D2B0808F3008D19F7 /* ContentView.swift */; };
 		415912202B0808F5008D19F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4159121F2B0808F5008D19F7 /* Assets.xcassets */; };
-		415912232B0808F5008D19F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415912222B0808F5008D19F7 /* Preview Assets.xcassets */; };
-		416AF9B12B081F46001F7C1F /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416AF9B02B081F46001F7C1F /* Intents.framework */; };
-		416AF9B82B081F46001F7C1F /* shortcuts-http-handler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 416AF9AE2B081F46001F7C1F /* shortcuts-http-handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		416AF9BE2B082BB9001F7C1F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 416AF9822B080E7B001F7C1F /* Intents.intentdefinition */; };
-		416AF9C02B082C17001F7C1F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416AF9B32B081F46001F7C1F /* IntentHandler.swift */; };
 		416AF9C12B082DAA001F7C1F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 416AF9822B080E7B001F7C1F /* Intents.intentdefinition */; };
+		4183EC882DE1778800E85679 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416AF9B02B081F46001F7C1F /* Intents.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		416AF9B62B081F46001F7C1F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 415912102B0808F3008D19F7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 416AF9AD2B081F46001F7C1F;
-			remoteInfo = "shortcuts-http-handler";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		416AF9982B081DFF001F7C1F /* Embed ExtensionKit Extensions */ = {
@@ -45,7 +31,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				416AF9B82B081F46001F7C1F /* shortcuts-http-handler.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,18 +38,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		415912182B0808F3008D19F7 /* shortcuts-http-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shortcuts-http-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		415912182B0808F3008D19F7 /* ShortcutsHttpClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortcutsHttpClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4159121B2B0808F3008D19F7 /* ShortcutsHTTPClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsHTTPClientApp.swift; sourceTree = "<group>"; };
 		4159121D2B0808F3008D19F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4159121F2B0808F5008D19F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		415912222B0808F5008D19F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		416AF9822B080E7B001F7C1F /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		416AF9842B080EBF001F7C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		416AF9AE2B081F46001F7C1F /* shortcuts-http-handler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "shortcuts-http-handler.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		416AF9B02B081F46001F7C1F /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		416AF9B32B081F46001F7C1F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		416AF9B52B081F46001F7C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		416AF9BD2B082B09001F7C1F /* shortcuts-http-handler */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "shortcuts-http-handler"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		416AF9AB2B081F46001F7C1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				416AF9B12B081F46001F7C1F /* Intents.framework in Frameworks */,
+				4183EC882DE1778800E85679 /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +63,7 @@
 		4159120F2B0808F3008D19F7 = {
 			isa = PBXGroup;
 			children = (
-				4159121A2B0808F3008D19F7 /* shortcuts-http-client */,
-				416AF9B22B081F46001F7C1F /* shortcuts-http-handler */,
+				4159121A2B0808F3008D19F7 /* ShortcutsHttpClient */,
 				416AF9AF2B081F46001F7C1F /* Frameworks */,
 				415912192B0808F3008D19F7 /* Products */,
 			);
@@ -101,57 +74,38 @@
 		415912192B0808F3008D19F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				415912182B0808F3008D19F7 /* shortcuts-http-client.app */,
-				416AF9AE2B081F46001F7C1F /* shortcuts-http-handler.appex */,
+				415912182B0808F3008D19F7 /* ShortcutsHttpClient.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4159121A2B0808F3008D19F7 /* shortcuts-http-client */ = {
+		4159121A2B0808F3008D19F7 /* ShortcutsHttpClient */ = {
 			isa = PBXGroup;
 			children = (
+				416AF9822B080E7B001F7C1F /* Intents.intentdefinition */,
+				416AF9B32B081F46001F7C1F /* IntentHandler.swift */,
 				416AF9842B080EBF001F7C1F /* Info.plist */,
 				4159121D2B0808F3008D19F7 /* ContentView.swift */,
 				4159121B2B0808F3008D19F7 /* ShortcutsHTTPClientApp.swift */,
 				4159121F2B0808F5008D19F7 /* Assets.xcassets */,
-				415912212B0808F5008D19F7 /* Preview Content */,
 			);
-			path = "shortcuts-http-client";
-			sourceTree = "<group>";
-		};
-		415912212B0808F5008D19F7 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				415912222B0808F5008D19F7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = ShortcutsHttpClient;
 			sourceTree = "<group>";
 		};
 		416AF9AF2B081F46001F7C1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				416AF9BD2B082B09001F7C1F /* shortcuts-http-handler */,
 				416AF9B02B081F46001F7C1F /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		416AF9B22B081F46001F7C1F /* shortcuts-http-handler */ = {
-			isa = PBXGroup;
-			children = (
-				416AF9822B080E7B001F7C1F /* Intents.intentdefinition */,
-				416AF9B32B081F46001F7C1F /* IntentHandler.swift */,
-				416AF9B52B081F46001F7C1F /* Info.plist */,
-			);
-			path = "shortcuts-http-handler";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		415912172B0808F3008D19F7 /* shortcuts-http-client */ = {
+		415912172B0808F3008D19F7 /* ShortcutsHttpClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4159123C2B0808F5008D19F7 /* Build configuration list for PBXNativeTarget "shortcuts-http-client" */;
+			buildConfigurationList = 4159123C2B0808F5008D19F7 /* Build configuration list for PBXNativeTarget "ShortcutsHttpClient" */;
 			buildPhases = (
 				415912142B0808F3008D19F7 /* Sources */,
 				415912152B0808F3008D19F7 /* Frameworks */,
@@ -162,29 +116,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				416AF9B72B081F46001F7C1F /* PBXTargetDependency */,
 			);
-			name = "shortcuts-http-client";
-			productName = "shortcuts-http-client";
-			productReference = 415912182B0808F3008D19F7 /* shortcuts-http-client.app */;
+			name = ShortcutsHttpClient;
+			productName = ShortcutsHttpClient;
+			productReference = 415912182B0808F3008D19F7 /* ShortcutsHttpClient.app */;
 			productType = "com.apple.product-type.application";
-		};
-		416AF9AD2B081F46001F7C1F /* shortcuts-http-handler */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 416AF9B92B081F46001F7C1F /* Build configuration list for PBXNativeTarget "shortcuts-http-handler" */;
-			buildPhases = (
-				416AF9AA2B081F46001F7C1F /* Sources */,
-				416AF9AB2B081F46001F7C1F /* Frameworks */,
-				416AF9AC2B081F46001F7C1F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "shortcuts-http-handler";
-			productName = "shortcuts-http-handler";
-			productReference = 416AF9AE2B081F46001F7C1F /* shortcuts-http-handler.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,12 +135,9 @@
 					415912172B0808F3008D19F7 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
-					416AF9AD2B081F46001F7C1F = {
-						CreatedOnToolsVersion = 15.0.1;
-					};
 				};
 			};
-			buildConfigurationList = 415912132B0808F3008D19F7 /* Build configuration list for PBXProject "shortcuts-http-client" */;
+			buildConfigurationList = 415912132B0808F3008D19F7 /* Build configuration list for PBXProject "ShortcutsHttpClient" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,8 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				415912172B0808F3008D19F7 /* shortcuts-http-client */,
-				416AF9AD2B081F46001F7C1F /* shortcuts-http-handler */,
+				415912172B0808F3008D19F7 /* ShortcutsHttpClient */,
 			);
 		};
 /* End PBXProject section */
@@ -228,15 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				415912232B0808F5008D19F7 /* Preview Assets.xcassets in Resources */,
 				415912202B0808F5008D19F7 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		416AF9AC2B081F46001F7C1F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,24 +177,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		416AF9AA2B081F46001F7C1F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				416AF9C02B082C17001F7C1F /* IntentHandler.swift in Sources */,
-				416AF9BE2B082BB9001F7C1F /* Intents.intentdefinition in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		416AF9B72B081F46001F7C1F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 416AF9AD2B081F46001F7C1F /* shortcuts-http-handler */;
-			targetProxy = 416AF9B62B081F46001F7C1F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4159123A2B0808F5008D19F7 /* Debug */ = {
@@ -400,24 +307,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"shortcuts-http-client/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 85CH3DS5T4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "shortcuts-http-client/Info.plist";
+				INFOPLIST_FILE = ShortcutsHttpClient/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Shortcuts HTTP Client";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.vergenzt.shortcuts-http-client";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.vergenzt.ShortcutsHttpClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -433,75 +339,24 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"shortcuts-http-client/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 85CH3DS5T4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "shortcuts-http-client/Info.plist";
+				INFOPLIST_FILE = ShortcutsHttpClient/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Shortcuts HTTP Client";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.vergenzt.shortcuts-http-client";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.vergenzt.ShortcutsHttpClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		416AF9BA2B081F46001F7C1F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85CH3DS5T4;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "shortcuts-http-handler/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shortcuts-http-handler";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.vergenzt.shortcuts-http-client.shortcuts-http-handler";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		416AF9BB2B081F46001F7C1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85CH3DS5T4;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "shortcuts-http-handler/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shortcuts-http-handler";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.vergenzt.shortcuts-http-client.shortcuts-http-handler";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -511,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		415912132B0808F3008D19F7 /* Build configuration list for PBXProject "shortcuts-http-client" */ = {
+		415912132B0808F3008D19F7 /* Build configuration list for PBXProject "ShortcutsHttpClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4159123A2B0808F5008D19F7 /* Debug */,
@@ -520,20 +375,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4159123C2B0808F5008D19F7 /* Build configuration list for PBXNativeTarget "shortcuts-http-client" */ = {
+		4159123C2B0808F5008D19F7 /* Build configuration list for PBXNativeTarget "ShortcutsHttpClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4159123D2B0808F5008D19F7 /* Debug */,
 				4159123E2B0808F5008D19F7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		416AF9B92B081F46001F7C1F /* Build configuration list for PBXNativeTarget "shortcuts-http-handler" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				416AF9BA2B081F46001F7C1F /* Debug */,
-				416AF9BB2B081F46001F7C1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
